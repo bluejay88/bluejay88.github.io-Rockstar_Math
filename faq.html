@@ -1,0 +1,324 @@
+<html>
+
+<head>
+    <title>FAQ Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img alt="Rockstar Math Logo" src="images/image 979.png" />
+            </div>
+            <div class="hidden lg:flex space-x-8 items-center">
+                <a class="text-gray-600" href="index.html">
+                    Home
+                </a>
+                <a class="text-gray-600" href="#">
+                    Reviews
+                </a>
+                <a class="text-gray-600" href="#">
+                    Courses
+                </a>
+                <a class="text-gray-600" href="#">
+                    Calendar
+                </a>
+                <a class="text-blue-600" href="faq.html">
+                    FAQS
+                </a>
+                <a class="text-gray-600" href="About.html">
+                    About
+                </a>
+                <a class="text-gray-600" href="Contact.html">
+                    Contact
+                </a>
+                <a class="text-gray-600 flex items-center" href="#">
+                    <i class="fas fa-lock mr-1">
+                    </i>
+                    Login
+                </a>
+                <a class="bg-blue-600 text-white px-4 py-2 rounded" href="#">
+                    Sign up for Free
+                </a>
+            </div>
+            <div class="lg:hidden">
+                <button class="text-gray-600 focus:outline-none" id="menu-button">
+                    <i class="fas fa-bars">
+                    </i>
+                </button>
+            </div>
+        </div>
+        <div class="hidden lg:hidden" id="mobile-menu">
+            <nav class="px-2 pt-4 pb-2 space-y-2">
+                <a class="block text-gray-600" href="index.html">
+                    Home
+                </a>
+                <a class="block text-gray-600" href="#">
+                    Reviews
+                </a>
+                <a class="block text-gray-600" href="#">
+                    Courses
+                </a>
+                <a class="block text-gray-600" href="#">
+                    Calendar
+                </a>
+                <a class="block text-blue-600" href="faq.html">
+                    FAQS
+                </a>
+                <a class="block text-gray-600" href="About.html">
+                    About
+                </a>
+                <a class="block text-gray-600" href="Contact.html">
+                    Contact
+                </a>
+                <a class="block text-gray-600 flex items-center" href="#">
+                    <i class="fas fa-lock mr-1">
+                    </i>
+                    Login
+                </a>
+                <a class="block bg-blue-600 text-white px-2 py-2 rounded" href="#">
+                    Sign up for Free
+                </a>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <img src="images/faq img.png" alt="">
+    </div>
+    <div class="bg-white text-gray-800">
+        <div class="max-w-2xl mx-auto py-16 px-4">
+            <h1 class="text-3xl font-semibold text-center">Frequently asked questions</h1>
+            <p class="text-center text-gray-500 mt-2">Everything you need to know about the product and billing.</p>
+
+            <div class="mt-8">
+                <div class="border-b py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(0)">
+                        <h2 class="text-lg font-medium">Who are these video lessons for?</h2>
+                        <i class="fas fa-minus text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-500 mt-2">Every student holds the potential for success. With tailored support
+                        and resources, that potential becomes reality.</p>
+                </div>
+                <div class="border-b py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(1)">
+                        <h2 class="text-lg font-medium">What makes Calcworkshop different? How do I know it will help
+                            me?</h2>
+                        <i class="fas fa-plus text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-500 mt-2 hidden">Calcworkshop offers personalized support and resources to
+                        ensure your success.</p>
+                </div>
+                <div class="border-b py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(2)">
+                        <h2 class="text-lg font-medium">Will Calcworkshop follow my coursework?</h2>
+                        <i class="fas fa-plus text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-500 mt-2 hidden">Yes, Calcworkshop is designed to align with your coursework and
+                        help you succeed.</p>
+                </div>
+                <div class="border-b py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(3)">
+                        <h2 class="text-lg font-medium">What makes Calcworkshop different? How do I know it will help
+                            me?</h2>
+                        <i class="fas fa-plus text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-500 mt-2 hidden">Calcworkshop provides unique resources and support tailored to
+                        your needs.</p>
+                </div>
+                <div class="border-b py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(4)">
+                        <h2 class="text-lg font-medium">How do the Monthly and Yearly membership plans work?</h2>
+                        <i class="fas fa-plus text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-500 mt-2 hidden">Membership plans offer flexible options to suit your needs,
+                        with both monthly and yearly subscriptions available.</p>
+                </div>
+                <div class="border-b py-4">
+                    <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(5)">
+                        <h2 class="text-lg font-medium">Why should I trust you?</h2>
+                        <i class="fas fa-plus text-blue-500"></i>
+                    </div>
+                    <p class="text-gray-500 mt-2 hidden">We have a proven track record of helping students succeed with
+                        our tailored resources and support.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mb-12">
+            <div class="bg-gray-200 rounded-lg p-8 mx-auto text-center">
+                <div class="flex justify-center mb-4">
+                    <img alt="Person 1" class="w-10 h-10 rounded-full border-2 border-white -ml-2" height="40"
+                        src="https://storage.googleapis.com/a1aa/image/6YV3NyPh7CoXA1ggon2VmkCL6ESFNzTcyBkKM4VhwqByDO7E.jpg"
+                        width="40" />
+                    <img alt="Person 2" class="w-10 h-10 rounded-full border-2 border-white -ml-2" height="40"
+                        src="https://storage.googleapis.com/a1aa/image/OnOz9rQF836NERIeS4lJaU4eDhHLkuFULkfsLNo2Tier8gzOB.jpg"
+                        width="40" />
+                    <img alt="Person 3" class="w-10 h-10 rounded-full border-2 border-white -ml-2" height="40"
+                        src="https://storage.googleapis.com/a1aa/image/Pbd2hfruRDXmRiEF3XtGyx3JnvgcjO24We4Jrzpt2zGPP4sTA.jpg"
+                        width="40" />
+                </div>
+                <h2 class="text-xl font-semibold mb-2">
+                    Still have questions?
+                </h2>
+                <p class="text-gray-600 mb-6">
+                    Can’t find the answer you’re looking for? Please chat to our friendly team.
+                </p>
+                <button
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+                    Get in Touch
+                </button>
+            </div>
+        </div>
+
+        <footer class="bg-white p-6 rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div>
+                    <img class="" src="image 979.png" alt="">
+                    <h3 class="text-2xl font-bold mb-2">
+                        Contact Us
+                    </h3>
+                    <p class="text-gray-600 mb-2">
+                        Call: +123 400 123
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                        Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+                    </p>
+                    <p class="text-gray-600 mb-2">
+                        Email: example@mail.com
+                    </p>
+                    <div class="flex space-x-4">
+                        <a class="text-blue-600 text-3xl" href="#">
+                            <i class="fab fa-facebook">
+                            </i>
+                        </a>
+                        <a class="text-blue-600 text-3xl" href="#">
+                            <i class="fab fa-instagram">
+                            </i>
+                        </a>
+                        <a class="text-blue-600 text-3xl" href="#">
+                            <i class="fab fa-linkedin">
+                            </i>
+                        </a>
+                        <a class="text-blue-600 text-3xl" href="#">
+                            <i class="fab fa-google">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-2xl font-bold mb-2">
+                        Explore
+                    </h3>
+                    <ul class="text-gray-600">
+                        <li class="mb-2">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Course
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">
+                        Category
+                    </h3>
+                    <ul class="text-gray-600">
+                        <li class="mb-2">
+                            <a href="#">
+                                Algebra I &amp; II
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Trigonometry (Pre-Calculus)
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Math Analysis
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Business Calculus
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Calculus 1
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Calculus 2
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">
+                        Subscribe
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Lorem Ipsum has been them an industry printer took a galley make book.
+                    </p>
+                    <div class="flex flex-col">
+                        <input class="p-2 border bg-gray-200 rounded font-semibold w-full mb-4"
+                            placeholder="Email here" type="email" />
+                        <button class="bg-blue-500 text-white font-semibold p-2 rounded-full w-1/2">
+                            Subscribe Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function toggleFAQ(index) {
+                const faqs = document.querySelectorAll('.border-b');
+                faqs.forEach((faq, i) => {
+                    const icon = faq.querySelector('i');
+                    const answer = faq.querySelector('p');
+                    if (i === index) {
+                        answer.classList.toggle('hidden');
+                        icon.classList.toggle('fa-plus');
+                        icon.classList.toggle('fa-minus');
+                    } else {
+                        answer.classList.add('hidden');
+                        icon.classList.add('fa-plus');
+                        icon.classList.remove('fa-minus');
+                    }
+                });
+            }
+        </script>
+    </div>
+</body>
+
+</html>
