@@ -626,18 +626,19 @@
         </div>
     </section>
 
-    <!-- Responsive My Calendar -->
-<section class="container flex mx-auto items-center py-16">
-    <div class="w-full md:w-2/3">
+    <!-- Responsive Horizontal Calendar -->
+<section class="container flex mx-auto items-center py-16 overflow-x-auto">
+    <div class="w-full">
         <h1 class="text-4xl px-4 font-bold mb-6">My Calendar</h1>
         <div class="bg-white rounded-lg shadow p-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 text-center text-sm">
+            <div 
+                class="grid grid-cols-5 auto-cols-min gap-4 text-center text-sm md:grid-rows-4 md:grid-cols-5">
                 <!-- Header Row -->
-                <div class="font-bold">Time (PST)</div>
-                <div class="font-bold">Sunday</div>
-                <div class="font-bold">Monday</div>
-                <div class="font-bold">Tuesday</div>
-                <div class="font-bold">Wednesday</div>
+                <div class="font-bold bg-gray-100">Time (PST)</div>
+                <div class="font-bold bg-gray-100">Sunday</div>
+                <div class="font-bold bg-gray-100">Monday</div>
+                <div class="font-bold bg-gray-100">Tuesday</div>
+                <div class="font-bold bg-gray-100">Wednesday</div>
 
                 <!-- Row 1: 3-6 PM -->
                 <div class="bg-gray-200 font-semibold">3 - 6 pm</div>
@@ -663,6 +664,7 @@
         </div>
     </div>
 </section>
+
 
 
 
