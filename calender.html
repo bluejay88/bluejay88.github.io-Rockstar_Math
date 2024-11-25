@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Calendar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="mx-auto">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html"><img alt="Rockstar Math Logo" src="images/image 979.png" /></a>
+            </div>
+            <div class="hidden lg:flex space-x-8 items-center">
+                <a class="text-gray-600" href="index.html">
+                    Home
+                </a>
+                <a class="text-gray-600" href="#">
+                    Reviews
+                </a>
+                <a class="text-gray-600" href="courses.html">
+                    Courses
+                </a>
+                <a class="text-blue-600" href="#">
+                    Calendar
+                </a>
+                <a class="text-gray-600" href="faq.html">
+                    FAQS
+                </a>
+                <a class="text-gray-600" href="#">
+                    Blogs
+                </a>
+                <a class="text-gray-600" href="About.html">
+                    About
+                </a>
+                <a class="text-gray-600" href="contact.html">
+                    Contact
+                </a>
+                <a class="text-gray-600 flex items-center" href="#">
+                    <i class="fas fa-lock mr-1">
+                    </i>
+                    Login
+                </a>
+                <a class="bg-blue-600 text-white px-4 py-2 rounded" href="#">
+                    Sign up for Free
+                </a>
+            </div>
+            <div class="lg:hidden">
+                <button class="text-gray-600 focus:outline-none" id="menu-button">
+                    <i class="fas fa-bars">
+                    </i>
+                </button>
+            </div>
+        </div>
+        <div class="hidden lg:hidden" id="mobile-menu">
+            <nav class="px-2 pt-4 pb-2 space-y-2">
+                <a class="block text-gray-600" href="index.html">
+                    Home
+                </a>
+                <a class="block text-gray-600" href="#">
+                    Reviews
+                </a>
+                <a class="block text-gray-600" href="courses.html">
+                    Courses
+                </a>
+                <a class="block text-blue-600" href="#">
+                    Calendar
+                </a>
+                <a class="block text-gray-600" href="faq.html">
+                    FAQS
+                </a>
+                <a class="block text-gray-600" href="About.html">
+                    About
+                </a>
+                <a class="block text-gray-600" href="contact.html">
+                    Contact
+                </a>
+                <a class="block text-gray-600 flex items-center" href="#">
+                    <i class="fas fa-lock mr-1">
+                    </i>
+                    Login
+                </a>
+                <a class="block bg-blue-600 text-white px-2 py-2 rounded" href="#">
+                    Sign up for Free
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main section  -->
+    <div class="container mx-auto p-4 sm:p-8">
+        <h1 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Calendar</h1>
+        <div class="overflow-x-auto">
+            <table class="min-w-full border-collapse border border-gray-300 rounded-lg">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24 md:text-xl">Time (PST)
+                        </th>
+                        <th class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24 md:text-xl">Sunday
+                        </th>
+                        <th class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24 md:text-xl">Monday
+                        </th>
+                        <th class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24 md:text-xl">Tuesday
+                        </th>
+                        <th class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24 md:text-xl">Wednesday
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24">3-6 pm</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Individual Lessons</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Individual Lessons</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Individual Lessons</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Individual Lessons</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24">7-8 pm</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Individual Lessons</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Middle School Study Group</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Algebra 1 Study Group</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Middle School Study Group</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center w-48 h-24">8-9 pm</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Common Core Drop In for Parents
+                        </td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Trigonometry and Precalculus
+                        </td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Calculus Drop In Group (1.5
+                            hours)</td>
+                        <td class="border border-gray-300 px-2 sm:px-4 py-2 text-center">Geometry Study Group</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="bg-white p-6 rounded-lg">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div>
+                <img class="" src="image 979.png" alt="">
+                <h3 class="text-2xl font-bold mb-2">
+                    Contact Us
+                </h3>
+                <p class="text-gray-600 mb-2">
+                    Call: +123 400 123
+                </p>
+                <p class="text-gray-600 mb-2">
+                    Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+                </p>
+                <p class="text-gray-600 mb-2">
+                    Email: example@mail.com
+                </p>
+                <div class="flex space-x-4">
+                    <a class="text-blue-600 text-3xl" href="#">
+                        <i class="fab fa-facebook">
+                        </i>
+                    </a>
+                    <a class="text-blue-600 text-3xl" href="#">
+                        <i class="fab fa-instagram">
+                        </i>
+                    </a>
+                    <a class="text-blue-600 text-3xl" href="#">
+                        <i class="fab fa-linkedin">
+                        </i>
+                    </a>
+                    <a class="text-blue-600 text-3xl" href="#">
+                        <i class="fab fa-google">
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="">
+                <h3 class="text-2xl font-bold mb-2">
+                    Explore
+                </h3>
+                <ul class="text-gray-600">
+                    <li class="mb-2">
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/courses">
+                            Courses
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Calendar
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/faq">
+                            FAQS
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Blogs
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/about">
+                            About
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">
+                    Category
+                </h3>
+                <ul class="text-gray-600">
+                    <li class="mb-2">
+                        <a href="#">
+                            Algebra I &amp; II
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Trigonometry (Pre-Calculus)
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Math Analysis
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Business Calculus
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Calculus 1
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#">
+                            Calculus 2
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">
+                    Subscribe
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    Lorem Ipsum has been them an industry printer took a galley make book.
+                </p>
+                <div class="flex flex-col">
+                    <input class="p-2 border bg-gray-200 rounded font-semibold w-full mb-4" placeholder="Email here"
+                        type="email" />
+                    <button class="bg-blue-500 text-white font-semibold p-2 rounded-full w-1/2">
+                        Subscribe Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
